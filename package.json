@@ -1,0 +1,15 @@
+{
+  "name": "VideoAudioWebRTC",
+  "version": "1.0.0",
+  "description": "Muestra de funcionamiento de transmición de audio y video con WebRTC (Máximo 2 personas por sala)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}
