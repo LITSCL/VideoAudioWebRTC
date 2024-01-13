@@ -1,5 +1,5 @@
 var socket = io.connect("", {"forceNew": true});
-socket.on("connect", () => {
+socket.on("connect", function() {
     const idSocketLocal = socket.id;
 
     var div_lobby = document.getElementById("lobby");
