@@ -34,7 +34,7 @@ io.on("connection", function(socket) {
         }     
         
         //Se ejecuta cuando es usuario se esta desconectado (Se ejecuta antes que el evento "disconnect"), es obligatorio que esté dentro del evento (connection).
-        socket.on('disconnecting', function() { 
+        socket.on("disconnecting", function() { 
             let salasDelSocketArray = Array.from(socket.rooms); //Se obtienen todas los rooms a los cuales pertenece el socket (En este caso siempre pertenece a un solo room).
             let nombreSala = salasDelSocketArray[1];
             socket.broadcast.to(nombreSala).emit("salir", socket.id);
